@@ -1,0 +1,76 @@
+  public class Email 
+    {             
+        public Email CreateInElq (AppInstallation appInstallation)
+        {
+            id = null;
+            createdAt = null;
+            updatedAt = null;
+            createdBy = null;
+            updatedBy = null;
+            archive = null; 
+            contentSections = null;
+            contentServiceInstances = null;
+            deployedAt = null;
+            dynamicContents = null;
+            //excludeFromAuthentication = null;
+            //emailFooterId = null;
+            //emailGroupId = null;
+            //emailHeaderId = null;
+            fieldMerges = null;
+            //folderId = null;
+            files = null;
+            hyperlinks = null;
+            images = null;
+            isPrivate = null;
+            micrositeId = null;
+            refreshedAt = null;
+            relativePath = null;
+            return AppCommands.CreateAsset<Email>(appInstallation, this);
+        }
+
+        public string type { get; set; }
+        public string currentStatus { get; set; }
+        public int? id { get; set; }
+        public Int64? createdAt { get; set; }
+        public int? createdBy { get; set; }
+        public string depth { get; set; }
+        public int? folderId { get; set; }
+        public string name { get; set; }
+        public List<string> permissions { get; set; }
+        public Int64? updatedAt { get; set; }
+        public int? updatedBy { get; set; }
+        public bool? archive { get; set; }
+        public string bounceBackEmail { get; set; }
+        public List<ContentSection> contentSections { get; set; }
+        public List<ContentServiceInstance> contentServiceInstances { get; set; }
+        public Int64? deployedAt { get; set; }
+        public List<DynamicContent> dynamicContents { get; set; }
+        public int? emailFooterId { get; set; }
+        public int? emailGroupId { get; set; }
+        public int? emailHeaderId { get; set; }
+        public int? encodingId { get; set; }
+        public bool? excludeFromAuthentication { get; set; }
+        public List<FieldMerge> fieldMerges { get; set; }
+        public List<FileStorage> files { get; set; }
+     //   public List<Form> forms { get; set; }
+        public HtmlContent htmlContent { get; set; }
+        public List<Hyperlink> hyperlinks { get; set; }
+        public List<ElqImage> images { get; set; }
+        public bool? isContentProtected { get; set; }
+        public bool? isPlainTextEditable { get; set; }
+        public bool? isPrivate { get; set; }
+        public bool? isTracked { get; set; }
+        public string layout { get; set; }
+        public string plainText { get; set; }
+        public string renderMode { get; set; }
+        public string replyToEmail { get; set; }
+        public string replyToName { get; set; }
+        public bool? sendPlainTextOnly { get; set; }
+        public string senderEmail { get; set; }
+        public string senderName { get; set; }
+        public string style { get; set; }
+        public string subject { get; set; }
+        public int? micrositeId { get; set; }
+        public Int64? refreshedAt { get; set; }
+        public string relativePath { get; set; }
+    }
